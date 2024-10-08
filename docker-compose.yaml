@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  service1:
+    build:
+      context: ./service1
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8199"
+    networks:
+      - internal
+
+  service2:
+    build:
+      context: ./service2
+      dockerfile: Dockerfile
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge
