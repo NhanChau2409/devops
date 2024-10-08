@@ -1,0 +1,1 @@
+service1 is shares with the host, cause the setting is expose it to local. Mapping port 8199 in container to port 8199 in local
