@@ -21,7 +21,6 @@ function getContainerInfo() {
 
 app.get("/", (req, res) => {
 	const containerInfo = getContainerInfo();
-	console.log(containerInfo);
 	res.json(containerInfo);
 });
 

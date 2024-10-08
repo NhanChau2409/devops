@@ -6,7 +6,7 @@ services:
       context: ./service1
       dockerfile: Dockerfile
     ports:
-      - "8080:8199"
+      - "8199:8199"
     networks:
       - internal
 
